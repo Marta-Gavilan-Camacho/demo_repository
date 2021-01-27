@@ -1,0 +1,33 @@
+# 1 Create a local repository in a new directory called exercises.
+mkdir exercises
+
+# 2 Create a Readme file and check the repository status.
+nano Readme
+ls
+
+# 3 Add the Readme file to the staging area and commit the change with appropriate message.
+git add Readme
+git commit -m "file Readme added"
+
+# 4 Copy the test_code folder in the working directory
+cp ../test_code .
+
+# 5 Create and commit a configuration to ignore all files with .tpm extension and all the test_code directory
+    Check that the configuration is well done
+  touch .gitignore
+  echo *.tpm >> .gitignore #to specify unwanted files
+  touch .gitignore
+  echo test_code >> .gitignore #to specify unwanted files
+  git status
+  git add --all 
+  git commit -m "Ignore tpm files and test_code directory"
+
+# 6 Rename the Readme file as Readme.txt
+mv Readme Readme.txt
+
+# 7 Track and commit the chages
+    ls
+
+# 8  Check out the comment
+
+# 9 Summarize all the commands used in a text file
